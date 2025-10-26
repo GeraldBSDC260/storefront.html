@@ -29,27 +29,34 @@ header {
 
 nav {
     background: #333; /* Dark background */
-    color: white; /* White text */
     padding: 10px 0; /* Padding for spacing */
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center items horizontally */
 }
 
 nav ul {
     list-style: none; /* Remove bullet points */
     padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    display: flex; /* Use Flexbox to display items horizontally */
 }
 
 nav ul li {
-    display: inline; /* Display links inline */
     margin: 0 15px; /* Space between links */
 }
 
 nav a {
     color: white; /* White text for links */
+    background-color: #333; /* Background color for links */
+    padding: 12px 20px; /* Padding for links */
     text-decoration: none; /* Remove underline */
+    display: block; /* Display links as block elements */
+    border-radius: 4px; /* Slightly round corners */
+    transition: background-color 0.3s; /* Transition for hover effect */
 }
 
 nav a:hover {
-    text-decoration: underline; /* Underline on hover */
+    background-color: #555; /* Change background color on hover */
 }
 
 footer {
