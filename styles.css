@@ -59,6 +59,28 @@ nav a:hover {
     background-color: #555; /* Change background color on hover */
 }
 
+table {
+    width: 100%; /* Set table width to 100% of its container */
+    border-collapse: collapse; /* Remove spacing between cells */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Solid border of 1 pixel in light gray */
+    padding: 12px; /* Padding for cells */
+    text-align: left; /* Align text to the left for all cells */
+}
+
+thead {
+    background-color: #444; /* Background color for header row */
+    color: white; /* Text color for header */
+}
+
+tfoot td {
+    text-align: center; /* Center the footer row’s content */
+    font-style: italic; /* Italic font style for footer row */
+    border-top: 1px solid #ccc; /* Top border for separation */
+}
+
 footer {
     text-align: center; /* Center the footer text */
     padding: 10px 0; /* Padding for spacing */
