@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 0; /* Padding for spacing */
+    text-align: center; /* Center the text */
+}
+
+nav {
+    background: #333; /* Dark background */
+    color: white; /* White text */
+    padding: 10px 0; /* Padding for spacing */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Display links inline */
+    margin: 0 15px; /* Space between links */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+main {
+    padding: 20px; /* Padding for main content */
+}
+
+footer {
+    text-align: center; /* Center the footer text */
+    padding: 10px 0; /* Padding for spacing */
+    background: #333; /* Dark background */
+    color: white; /* White text */
+}
