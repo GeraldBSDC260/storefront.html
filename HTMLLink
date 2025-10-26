@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Store</title>
+</head>
+<body>
+
+    <header>
+        <h1>Student ID: gerbla7878 | Store Name: Blackwell & Family Store</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="products">
+            <h2>Our Products</h2>
+            <p>Here you can find a listing of our amazing products!</p>
+            <!-- You can add product listings here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Awesome Store. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
