@@ -1,7 +1,23 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Use Arial font */
+    background-color: #f2f2f2; /* Set overall page background color to light gray */
+}
+
+/* Center the main content area */
+main {
+    max-width: 960px; /* Set maximum width */
+    margin: 0 auto; /* Center using automatic horizontal margins */
+    padding: 20px; /* Add padding for spacing */
+}
+
+/* Style for each section */
+section {
+    background-color: white; /* White background color for sections */
+    padding: 20px; /* Add padding to each section */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light box shadow */
+    margin-bottom: 20px; /* Space between sections */
 }
 
 header {
@@ -34,10 +50,6 @@ nav a {
 
 nav a:hover {
     text-decoration: underline; /* Underline on hover */
-}
-
-main {
-    padding: 20px; /* Padding for main content */
 }
 
 footer {
