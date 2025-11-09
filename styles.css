@@ -86,8 +86,32 @@ footer {
     margin-top: 20px;
 }
 
-/* Responsive Styles */
-@media (min-width: 600px) {
+/* Media Queries */
+
+/* Phones: max width of 767px */
+@media (max-width: 767px) {
+    main {
+        flex-direction: column; /* Stack articles vertically */
+    }
+    
+    article {
+        width: 100%; /* Full width for articles */
+    }
+}
+
+/* Tablets: min width of 768px and max width of 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        flex-direction: column; /* Stack articles vertically */
+    }
+    
+    article {
+        width: 80%; /* Slightly narrower on tablets */
+    }
+}
+
+/* Desktops: min width of 1025px */
+@media (min-width: 1025px) {
     main {
         flex-direction: row; /* Side by side on wider screens */
         justify-content: center; /* Center articles */
