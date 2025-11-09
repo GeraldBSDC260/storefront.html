@@ -1,3 +1,4 @@
+/* Reset some default styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -28,8 +29,8 @@ nav ul li {
 
 main {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; /* Stack articles vertically by default */
+    align-items: center; /* Center content */
     gap: 20px; /* Space between articles */
 }
 
@@ -38,7 +39,8 @@ article {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+    width: 100%; /* Full width on small screens */
+    max-width: 600px; /* Limit width for readability */
 }
 
 section {
@@ -88,5 +90,16 @@ footer {
 @media (min-width: 600px) {
     main {
         flex-direction: row; /* Side by side on wider screens */
+        justify-content: center; /* Center articles */
+    }
+    
+    article {
+        flex: 1 1 300px; /* Allow articles to grow and shrink */
+        margin: 10px; /* Space between articles */
+    }
+    
+    section {
+        flex: 1 1 100%; /* Full width for the contact section */
+        margin-top: 20px; /* Space above contact section */
     }
 }
