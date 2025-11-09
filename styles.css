@@ -1,126 +1,92 @@
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
     line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 nav {
-    background: #444;
-    color: #fff;
-    padding: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1rem; /* Space between navigation items */
+    list-style-type: none;
+    padding: 0;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
-/* Main Content Area */
 main {
     display: flex;
-    flex-direction: column;
-    gap: 2rem; /* Space between sections */
-    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between articles */
 }
 
-/* Products Section */
-#products {
-    flex: 1; /* Allow products section to grow */
+article {
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
 }
 
-/* Contact Form Styles */
-#contact {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem; /* Space between form elements */
+section {
+    flex: 1 1 100%; /* Full width on small screens */
+    margin-top: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 form {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack form elements vertically */
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
-    padding: 0.5rem;
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    transition: border-color 0.3s ease; /* Transition for input fields */
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-    border-color: #007BFF; /* Change border color on focus */
-}
-
-button[type="submit"] {
-    padding: 0.5rem;
-    background-color: #007BFF;
+button {
+    padding: 10px;
+    background-color: #5cb85c;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Transition for button */
 }
 
-button[type="submit"]:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+button:hover {
+    background-color: #4cae4c;
 }
 
-/* Footer Styles */
 footer {
     text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: white;
+    margin-top: 20px;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul {
-        flex-direction: column; /* Stack navigation items on small screens */
-    }
-
+/* Responsive Styles */
+@media (min-width: 600px) {
     main {
-        padding: 1rem; /* Less padding on small screens */
-    }
-}
-
-@media (min-width: 601px) and (max-width: 900px) {
-    main {
-        flex-direction: column; /* Keep column layout for tablets */
-    }
-}
-
-@media (min-width: 901px) {
-    main {
-        flex-direction: row; /* Row layout for desktops */
-        gap: 2rem; /* Space between sections */
-    }
-
-    #products {
-        flex: 2; /* Give more space to products section */
-    }
-
-    #contact {
-        flex: 1; /* Give less space to contact section */
+        flex-direction: row; /* Side by side on wider screens */
     }
 }
